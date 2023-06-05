@@ -5,11 +5,25 @@ body {
 
     --color1: #FFA646;
 }
+h1{
+    font-size: 85px;
+    margin: 5px;
+}
+.alumni{
+    font-family: 'Alumni Sans', sans-serif !important; 
+}
+
+.bebas{
+    font-family: 'Bebas Neue', sans-serif !important;
+}
 
 .navbar{
     background-color: black;
     display: flex;
     flex-direction: row;
+}
+.navbar-text{
+    margin-left: 65%;
 }
 
 .navbar-logo{
@@ -45,9 +59,12 @@ body {
 }
 
 div.main-page {
-    background-image: url(video-bg.jpg);
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8) ), url(video-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+
 }
 
 div.title{
@@ -73,10 +90,20 @@ div.about-button {
 }
 
 div.about-button button{
+    font-size: 28px;
+    font-family: bold;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     background-color: black;
     color: white;
-    border-radius: 20px;
-    border: 2px solid var(--color1);
+    border-radius: 80px;
+    border: 3px solid var(--color1);
+    transition-duration: 0.5s;
+    margin-bottom: 3%;
+}
+
+div.about-button button:hover{
+    scale: 1.1;
+    background-color: white;
+    color: black;
 }
